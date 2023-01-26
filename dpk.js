@@ -1,6 +1,6 @@
 const crypto = require("crypto");
 
-exports.deterministicPartitionKey = (event) => {
+exports.normalizePartitionKey = (event) => {
   const TRIVIAL_PARTITION_KEY = "0";
   const MAX_PARTITION_KEY_LENGTH = 256;
   let candidate;
