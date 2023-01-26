@@ -17,5 +17,23 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
 ## Your Breakdown Here
 
+### [ticket-1] : Update Facilities table structure.
+- We need to assign Facility's custom ID to each agent working for the facility.
+- We will add 'facility_reference' field, its data type is varchar[50]. It is not Primary key, no auto-increment
+
+### [ticket-2] : Create a function to generate a custom Facility Referece based on Facility information.
+- The function will return `[facility_table_id]-[substr(FacilityName, 10)]` as facility reference.
+- This function should be executed when facility is created or updated its name.
+
+### [ticket-3] : Add `facility_reference` in `getShiftByFacility` function's response.
+- We need to add the feature to get `facility_reference` from Facilities table by Facility's ID in `getShiftByFacility`.
+- And we must return the `facility_reference` value in its response.
+
+### [ticket-4] : Update `generateReport` function.
+- We need to pass `facility_reference` variable and its value instead of Agent'ID for the parameters of `generateReport` function.
+- When we generate a PDF, we will add the `facility_reference` and display it.
+
+That's all.
+
 
 
