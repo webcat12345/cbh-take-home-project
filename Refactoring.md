@@ -9,3 +9,16 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+I refactored the `deterministicPartitionKey` to  `normalizePartitionKey`.
+- The general start `get` is not proper here. Because the `PartitionKey` can be included in parameter.
+- The returned value is the standardized `PartitionKey`, so I added `normalize` and `PartitionKey` in the name.
+- `normalize` looks shorter than `standardize`. :)
+
+Thank you for checking my test.
+Please let me know the result even if I am not selected.
+I am very interested in your process to select a developer.
+
+Best regards
+Liu Zhang.
+P.S. My email is rango0986@gmail.com
